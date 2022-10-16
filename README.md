@@ -1,2 +1,2 @@
-# lab2
-Publish site URL: https://yis004.github.io/lab2/
+# lab3
+Publish site URL: https://yis004.github.io/fa22-cse110-lab3/

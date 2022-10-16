@@ -1,0 +1,178 @@
+/* To change the headline of the page */
+h1 {
+    color: rgba(167, 0, 0, 0.784);
+    font-size: 15mm;
+    text-align: center; 
+    height: 100px;
+    width: 100vw;
+    max-width: 100vw;
+    min-width: 0vw;
+    position: relative;
+    left: 0vw;
+    font-family: 'Kaushan Script', cursive;
+    
+  }
+
+/* To change the top navigation links on the page */
+.nav {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+/* To modify all the subheadline of the page */
+h2 {
+    margin: auto;
+    font-size: 3rem;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.258);
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 30px;
+    
+}
+
+/* To change change the background color and overall margin ration */
+.background {
+    background-color: rgba(184, 184, 0, 0.265);
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+/* To set the margin style of the agenda detail section */
+.agenda {
+    width: 1000px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.8cm;
+}
+
+/* To make the form section prettier */
+.form {
+    padding-top:5vw;
+    padding-bottom:5vw;
+    padding-left:10vw;
+    padding-right:10vw;
+}
+
+/* To enlarge the font and center the three sections */
+.miscellaneous,.form, .footer {
+    font-size: 2em;
+    text-align: center;
+
+}
+
+/* To highlight the footer links on the page */
+.footer_links {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    column-gap: 100px;
+}
+
+/* To change the top description of the meeting to center - subheadline, date, and attendants */
+.description {
+    text-align: center;
+    display: block;
+}
+
+/* To apply the underline rule */
+.description_detail{
+    text-decoration: underline;
+}
+
+/* To change agenda headline to fit the overall style */
+#agenda_headline {
+    background-color: rgba(255, 0, 0, 0.258);
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 30px;
+
+}
+
+/* To apply short padding to all elements */
+* {
+    width: auto;
+    height: auto;
+    padding: auto 10vw auto 10vw;
+}
+
+/* To give more space in the folding link */
+a[href].link{
+    display: block;
+    margin-top: 40px;
+    margin-right: 300px;
+    margin-bottom: 70px;
+    margin-left: 300px;
+}
+
+/* To apply short margin onto the form button */
+button {
+    margin: auto auto auto auto;
+    font-size: 30px;
+}
+
+/* To change the font color of button when mouse hovers */
+button:hover{
+    color: green;
+    
+}
+
+/* To change the font and background color when mouse click the form button */
+button:active{
+    color: red;
+    background-color: black;
+    
+}
+
+/* To make the font bold in the details tag inside section */
+section details{
+    font-weight: Bold;
+}
+
+/* To change the font family of the child summary tag in detail tag */
+details > summary{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* To change the color and font from h1 to h3 tag */
+h1 ~ h3 {
+    color:rgba(184, 0, 0, 0.649);
+    font-weight: Bold;
+}
+
+/* To center the text in br tag child ul tag immediately after first */
+br + ul {
+    text-align: center;
+}
+
+/* To center the child class tag of details tag */
+details.details {
+    text-align: center;
+}
+
+/* To make the form first three items with inline block */
+.form_collect {
+    display: inline-block;
+}
+
+/* To apply grid format onto the guide for success teamwork for higher readability */
+.guide {
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 5vw 5vw 5vw;
+    column-gap: 100px;
+}
+
+/* To give the page more readability when using different devices */
+@media screen and (max-width: 300px) {
+    body {
+        background-color:lightsteelblue;
+        width:30%;
+    }
+}

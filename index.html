@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="background">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="goodlooking.css">
     <title>Project 1 communication</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico?">
     <meta name="description" content="This page is solely designed for meeting the lab 2 requirement. The topic is regarding project 1 communication">
   </head>
-  <body>
+  <body class="main_window">
     <main>
-        <nav>
+        <nav class="nav">
             <ul>
                 <li><a href="https://github.com/yis004/">Github main Page</a></li>
                 <li><a href="https://github.com/yis004/lab2">Lab2 Page</a></li>
@@ -17,22 +21,22 @@
             <hr>
             <br>
             <br>
-            <h1>Project 1 communication</h1>
-            <h2>Meeting description: <span style="color:green;font-weight:bold">Brainstorming regarding how to collaborate together in the upcoming quarter</span></h2>
-            <h3>Date - 10/4/2022</h3>
-            <h3>Attendance List: Alex Song, Juming Chao, Laoting Xu, Bob Moster</h3>
+            <h1>* Project 1 communication *</h1>
+            <h3 class="description">Meeting description: <span style="color:green;font-weight:bold" class="description_detail">Brainstorming regarding how to collaborate together in the upcoming quarter</span></h2>
+            <h3 class="description">Date - 10/4/2022</h3>
+            <h3 class="description">Attendance List: Alex Song, Juming Chao, Laoting Xu, Bob Moster</h3>
             <br>
             <hr>
         </section>
         <section>
             <br>
-            <h2>Meeting Agenda</h2>
-            <p><span style="color:Green;font-weight:bold">We will start</span> the meeting by discussing what collaboration looks like. This will help everyone be on the same page and understand what is expected of them.</p>
-            <p><span style="color:Green;font-weight:bold">Next, set some expectations</span> for the meeting. For example, each person should have a chance to share their ideas before discussion begins.             </p>
-            <p><span style="color:Green;font-weight:bold">Finally, spend some time brainstorming</span> ideas on how to collaborate together. Brainstorming can be done individually or in small groups. Once everyone has had a chance to share their ideas, it is time to start discussion and come up with a plan of action.            </p>
+            <h2 id="agenda_headline">Meeting Agenda</h2>
+            <p class="agenda"><span style="color:Green;font-weight:bold">We will start</span> the meeting by discussing what collaboration looks like. This will help everyone be on the same page and understand what is expected of them.</p>
+            <p class="agenda"><span style="color:Green;font-weight:bold">Next, set some expectations</span> for the meeting. For example, each person should have a chance to share their ideas before discussion begins.             </p>
+            <p class="agenda"><span style="color:Green;font-weight:bold">Finally, spend some time brainstorming</span> ideas on how to collaborate together. Brainstorming can be done individually or in small groups. Once everyone has had a chance to share their ideas, it is time to start discussion and come up with a plan of action.            </p>
             <br>
         </section>
-        <section>
+        <section class="miscellaneous">
             <hr>
             <br>
             <h2>Miscellaneous comments / questions / concerns</h2>
@@ -46,7 +50,7 @@
                 
             </ol>
             <br>
-            <a><i>Any other questions arise <b>can be asked during the meeting</b>...</i></a>
+            <a class="any_questions"><i>Any other questions arise <b>can be asked during the meeting</b>...</i></a>
             
             <br>
         </section>
@@ -54,10 +58,20 @@
             <hr>
             <br>
             <h2>Images used during the meeting</h2>
-            <img src="benefits.png" alt="5 benefits of team collaboration" width="500" height="200">
-            <details>
+            <img src="benefits.png" alt="5 benefits of team collaboration" width="500" height="200" class="img">
+            <style>
+                /* To apply margin rule onto the img class tag */
+                .img {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    
+                }
+            </style>
+            <br>
+            <details class="details">
                 <summary>Above image covers the bullet points of team collaboration benefits [Click to reveal image source/credit]</summary>
-                <p><a href="https://asana.com/resources/collaboration-in-the-workplace">Click to open image source</a></p>
+                <p><a href="https://asana.com/resources/collaboration-in-the-workplace" class="link">Click to open image source</a></p>
             </details>
             <br>
         </section>
@@ -65,27 +79,27 @@
             <hr>
             <br>
             <h2>Meeting video & audio clips</h2>
-            <video width="640" height="320" controls><source src="video.mp4" type="video/mp4"></video><br>
+            <video controls><source src="video.mp4" type="video/mp4"></video><br>
             <audio controls><source src="audio.mp3" type="audio/mp3"></audio>
             
             <br>
         </section>
-        <section>
+        <section class="form">
             <br><br><br>
             <h2>Feedback Section</h2>
             <form>
                 <fieldset>
-                    <legend>Feedback Collection Form</legend>
+                    <legend class="form_collect">Feedback Collection Form</legend>
                     First name: <input type="text"><br>
                     Grade this feedback priority:
-                    <select>
+                    <select class="form_collect">
                         <option value="Important">Important</option>
                         <option value="Minor">Minor</option>
                         <option value="Suggestion">Suggestion</option>
                     </select><br>
                     This is a feedback regarding: 
-                    <input list="feedback_topic"><br>
-                    <datalist id="feedback_topic">
+                    <input list="feedback_topic" class="form_collect"><br>
+                    <datalist id="feedback_topic" class="form_collect">
                         <option value="Introduction">
                         <option value="Meeting Agenda">
                         <option value="Main Discussion topics">
@@ -97,16 +111,29 @@
             </form>
             
         </section>
+        <section>
+            <br><br><br>
+            <h2>Guide for successful teamwork</h2>
+            <nav>
+                <br>
+                <ul class="guide">
+                    <li>In order for a team to be successful, there are key components that must be in place. The first is effective communication. This means that team members must be able to share information and ideas openly and freely. Without communication, it will be difficult for the team to work together effectively. Another key component of successful teamwork is trust. Trust is essential in any relationship, but it is especially important in a teamwork setting. Without trust, team members will not feel comfortable working together and may not be willing to take risks. Finally, successful teamwork requires cooperation from all members. This means that everyone must be willing to work together towards a common goal. If even one member is not cooperating, it can have a negative impact on the entire team.</li>
+                    <li>No matter what industry you work in, it's likely that you'll have to work on a team at some point. And while teamwork can be extremely beneficial, it can also be challenging. These challenges can include things like communication difficulties, personality conflicts, and different work styles. Fortunately, there are ways to overcome these challenges and make teamwork more successful. One way is to improve communication by being clear and concise when communicating with team members. It's also important to be respectful of others' ideas and opinions, even if you don't agree with them. Finally, try to be flexible and adaptable to different working styles. By following these tips, you can overcome the challenges of teamwork and make your team more successful.</li>
+                    <li>Building and maintaining successful teams requires effective communication, clear goals, and mutual respect among team members. An important aspect of building a successful team is establishing clear goals. Without a shared goal, it can be difficult for team members to work together effectively. Once the goals are established, it is important to communicate them to all members of the team. Mutual respect is another key ingredient in a successful team. When team members feel respected by their colleagues, they are more likely to trust and cooperate with them. This mutual respect should extend to both the professional and personal levels. Effective communication is essential for building and maintaining successful teams. Team members need to be able to share information and ideas freely in order to work together effectively. There should also be open channels of communication between the team and its leader.</li>  
+                </ul>
+            </nav>
+        </section>
         
 
     </main>
     <div></div>
     <span></span>
-    <footer>
+    <footer class="footer">
         <br><br><br>
         <h2>External Reading Sources For Curious People</h2>
         <nav>
-            <ul>
+            <br>
+            <ul class="footer_links">
                 <li><a href="https://slack.com/blog/collaboration/5-tips-for-effective-collaboration-at-work">Five tips for effective collaboration at work</a></li>
                 <li><a href="https://www.mindtools.com/pages/article/collaborate-successfully.htm">How to collaborate successfully</a></li>
                 <li><a href="https://hbr.org/2007/11/eight-ways-to-build-collaborative-teams">Eight ways to build collaborative team</a></li>  
