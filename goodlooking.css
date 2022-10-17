@@ -170,9 +170,9 @@ details.details {
 }
 
 /* To give the page more readability when using different devices */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 800px) and (min-width: 0px) {
     body {
         background-color:lightsteelblue;
-        width:30%;
+        
     }
 }
